@@ -1,7 +1,7 @@
 /** @jsx h */
 import { h } from "preact";
 import { tw } from "@twind";
-import Counter from "../islands/Counter.tsx";
+import SqlViewer from "../islands/SqlViewer.tsx";
 
 export default function Home() {
   return (
@@ -12,10 +12,9 @@ export default function Home() {
         alt="the fresh logo: a sliced lemon dripping with juice"
       />
       <p class={tw`my-6`}>
-        Welcome to `fresh`. Try updating this message in the ./routes/index.tsx
-        file, and refresh.
+        Input csv file to insert DB.
       </p>
-      <Counter start={3} />
+      <SqlViewer />
     </div>
   );
 }
